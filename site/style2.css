@@ -1,0 +1,59 @@
+/********** Base styles **********/
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	margin-bottom: 15px;
+}
+
+p.absolute {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	background-color: yellowgreen;
+}
+
+p.relative {
+	position: relative;
+	background-color: greenyellow;
+}
+
+#p1 {
+	background-color: #67E300;
+	width: 300px;
+	height: 300px;
+}
+
+#p2 {
+	background-color: #9303A7;
+	width: 50px;
+	height: 50px;
+}
+
+/********** Large devices **********/
+
+@media (min-width: 1200px) {
+	#p1 {
+		width: 80%;
+	}
+
+	#p2 {
+		width: 150px;
+		height: 150px;
+	}
+}
+
+/********** Medium devices **********/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	#p1 {
+		width: 50%;
+	}
+	
+	#p2 {
+		width: 100px;
+		height: 100px;
+	}
+}

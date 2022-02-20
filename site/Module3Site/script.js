@@ -1,14 +1,18 @@
-const message = "in global";
-console.log("global message: " + message)
+var x;
+console.log(x);
 
-const a = function () {
-    const message = "inside a";
-    console.log("a message: " + message)
-    b()
+if (x == undefined)
+{
+    console.log("x is undefined");
 }
 
-function b() {
-    console.log("b message: " + message)
-}
+x = 5;
 
-a();
+if (x == undefined)
+{
+    console.log("x is undefined");
+}
+else
+{
+    console.log("x is defined");
+}

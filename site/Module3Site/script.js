@@ -1,18 +1,11 @@
-var x;
-console.log(x);
-
-if (x == undefined)
-{
-    console.log("x is undefined");
+function Circle (radius) {
+    this.radius = radius;
 }
 
-x = 5;
+Circle.prototype.getArea = 
+    function () {
+        return Math.PI * Math.pow(this.radius, 2);
+    }
 
-if (x == undefined)
-{
-    console.log("x is undefined");
-}
-else
-{
-    console.log("x is defined");
-}
+var myCircle = new Circle(10);
+console.log(myCircle);
